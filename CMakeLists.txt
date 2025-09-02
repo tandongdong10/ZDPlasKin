@@ -43,4 +43,6 @@ install(TARGETS ZDPlasKin
 
 # 2. install the header file
 file(GLOB MY_HEADERS "${CMAKE_SOURCE_DIR}/*.H")
+file(GLOB MY_LIBRARYS "${CMAKE_SOURCE_DIR}/*.so")
 install(FILES ${MY_HEADERS} DESTINATION include)
+install(FILES ${MY_LIBRARYS} DESTINATION lib)
